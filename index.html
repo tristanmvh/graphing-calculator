@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!--<h1>Tristans koordinatssystem graf <sup>version 1.0</sup></h1>-->
+    <canvas id="canvas"></canvas>
+    <br>
+    <span>x: <select id="x-pos">
+        <option value="0">-4</option>
+        <option value="110">-3</option>
+        <option value="210">-2</option>
+        <option value="310">-1</option>
+        <option value="410" selected>0</option>
+        <option value="510">1</option>
+        <option value="610">2</option>
+        <option value="710">3</option>
+        <option value="810">4</option>
+    </select>
+
+    y: <select id="y-pos">
+        <option value="810">-4</option>
+        <option value="710">-3</option>
+        <option value="610">-2</option>
+        <option value="510">-1</option>
+        <option value="410" selected>0</option>
+        <option value="310">1</option>
+        <option value="210">2</option>
+        <option value="110">3</option>
+        <option value="10">4</option>
+    </select>
+    <button id="set">Placera</button>
+    </span><br>
+
+<span id="drawLineSet">Dra linje från (<select id="from-line-x">
+    <option value="0">-4</option>
+    <option value="110">-3</option>
+    <option value="210">-2</option>
+    <option value="310">-1</option>
+    <option value="410" selected>0</option>
+    <option value="510">1</option>
+    <option value="610">2</option>
+    <option value="710">3</option>
+    <option value="810">4</option>
+</select>, <select id="from-line-y">
+    <option value="810">-4</option>
+    <option value="710">-3</option>
+    <option value="610">-2</option>
+    <option value="510">-1</option>
+    <option value="410" selected>0</option>
+    <option value="310">1</option>
+    <option value="210">2</option>
+    <option value="110">3</option>
+    <option value="10">4</option>
+</select>) till (<select id="to-line-x">
+    <option value="0">-4</option>
+    <option value="110">-3</option>
+    <option value="210">-2</option>
+    <option value="310">-1</option>
+    <option value="410" selected>0</option>
+    <option value="510">1</option>
+    <option value="610">2</option>
+    <option value="710">3</option>
+    <option value="810">4</option>
+</select>, <select id="to-line-y">
+    <option value="810">-4</option>
+    <option value="710">-3</option>
+    <option value="610">-2</option>
+    <option value="510">-1</option>
+    <option value="410" selected>0</option>
+    <option value="310">1</option>
+    <option value="210">2</option>
+    <option value="110">3</option>
+    <option value="10">4</option>
+</select>) <button id="draw-line">Dra linje</button></span><br>
+
+    <button id="clear">Rensa grafräknaren</button>
+    <button id="remove-shapes">Ta bort former och linjer</button>
+    <script src="main.js"></script>
+</body>
+</html>
