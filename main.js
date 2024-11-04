@@ -155,5 +155,5 @@ i++
 
 document.getElementById("draw-line").onclick = function () {
     ctx.beginPath();
-    ctx.strokeStyle("red");
+    ctx.strokeStyle = "red";
 }
